@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package articles;
 
+option go_package = "./articles-service/"; 
+
 message ArticlesPageRequest {
     string query_string = 1;
     optional int32 page = 2;
